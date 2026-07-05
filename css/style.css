@@ -1,11 +1,15 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     color: #333;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 img {
@@ -48,15 +52,19 @@ img {
     text-align: center;
     color: white;
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .hero-content {
     width: 100%;
     max-width: 800px;
+    box-sizing: border-box;
 }
 
 .navbar {
     transition: .4s;
+    width: 100%;
 }
 
 .navbar-brand {
@@ -71,12 +79,16 @@ img {
 
 .courses {
     background: #fff;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .about {
     display: flex;
     justify-content: center;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .about .row {
@@ -137,10 +149,17 @@ img {
     background: #0d6efd;
     color: white;
     padding: 80px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .admission .btn {
     margin-top: 20px;
+}
+
+.contact {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer {
@@ -148,6 +167,8 @@ img {
     color: white;
     text-align: center;
     padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer i {
