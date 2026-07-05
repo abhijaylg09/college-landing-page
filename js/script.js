@@ -44,7 +44,7 @@ Message: ${message}`;
         const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
 
         // Show success message
-        alert("Form Submitted Successfully! You'll be redirected to WhatsApp.");
+        alert("Form Submitted Successfully! Opening WhatsApp...");
 
         // Redirect to WhatsApp after a short delay
         setTimeout(function () {
