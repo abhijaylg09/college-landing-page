@@ -237,17 +237,30 @@ img {
         width: 60px;
     }
 
+    /* Course Cards - 2 Column Grid */
+    .col-xl-3 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+
     /* Cards */
     .card img {
-        height: 180px;
+        height: 150px;
     }
 
     .card-body h4 {
-        font-size: 16px;
+        font-size: 14px;
+        margin-bottom: 8px;
     }
 
     .card-body p {
-        font-size: 13px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .card-body .btn {
+        font-size: 12px;
+        padding: 6px 12px;
     }
 
     /* Admission Section */
@@ -323,5 +336,11 @@ img {
 
     .card img {
         height: 200px;
+    }
+
+    /* Course Cards - 2 Column on Tablet */
+    .col-lg-4 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
     }
 }
