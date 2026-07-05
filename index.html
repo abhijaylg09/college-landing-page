@@ -55,7 +55,7 @@
                
                 <div class="col-lg-6" data-aos="fade-left">
                     <h2 class="section-title"> About</h2>
-                    <p>GOVERMENT ENGINEERING COLLEGE IDUKKI is committed to providing quality education, innovation, and research. Our experienced faculty, modern campus, and student-focused approach help learners achieve academic excellence and prepare for successful careers.</p>
+                    <p>GOVERMENT ENGINEERING COLLEGE IDUKKI is committed to providing quality education, innovation, and research. Our experienced faculty, modern campus, and student-focused appro[...]
                     <a href="#courses" class="btn btn-primary">Explore Courses</a>
                 </div>
             </div>
@@ -141,21 +141,25 @@
     <section id="contact" class="contact py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title text-center mb-5">Contact Us</h2>
-            <form id="contactForm">
-                <div class="mb-3">
-                    <input type="text" id="name" class="form-control" placeholder="Your Name">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" id="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" id="phone" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea id="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Submit</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <input type="email" id="email" class="form-control" placeholder="Email">
-                </div>
-                <div class="mb-3">
-                    <input type="text" id="phone" class="form-control" placeholder="Phone Number">
-                </div>
-                <div class="mb-3">
-                    <textarea id="message" class="form-control" rows="5" placeholder="Message"></textarea>
-                </div>
-                <button class="btn btn-success w-100">Submit</button>
-            </form>
+            </div>
         </div>
     </section>
 
