@@ -1,5 +1,8 @@
 const form = document.getElementById("contactForm");
 
+// WhatsApp Configuration
+const WHATSAPP_NUMBER = "917736086163"; // Your WhatsApp number (without +)
+
 if (form) {
     form.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -26,8 +29,28 @@ if (form) {
             return;
         }
 
-        alert("Form Submitted Successfully!");
-        form.reset();
+        // Format the enquiry message for WhatsApp
+        const enquiryMessage = `Hello, I'm interested in your college programs.
+
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Message: ${message}`;
+
+        // Encode the message for URL
+        const encodedMessage = encodeURIComponent(enquiryMessage);
+
+        // WhatsApp Web URL
+        const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+        // Show success message
+        alert("Form Submitted Successfully! You'll be redirected to WhatsApp.");
+
+        // Redirect to WhatsApp after a short delay
+        setTimeout(function () {
+            window.open(whatsappURL, "_blank");
+            form.reset();
+        }, 500);
     });
 }
 
